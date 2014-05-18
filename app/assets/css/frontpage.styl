@@ -13,22 +13,33 @@ dark-blue = #222a35
 
   #before-after
     margin-bottom 20px
+
+    i
+      display none
+
     a
       color lighten(dark-blue, 20%)
       display inline-block
-      font-size 25px
-      font-weight 700
-      border-bottom 3px dashed
+      font-size 15px
+      font-weight 400
       line-height 30px
+      background linear-gradient(bottom, #ddd, transparent)
+      border 1px solid #ddd
+      padding 10px 30px
 
       &.selected
-        color #aab8cd
-        border-bottom 0px
-        &:hover
-          color @color
+        font-weight 700
+        color #333
+        background linear-gradient(bottom, #eee, transparent, transparent)
 
-      &:hover
-        color lighten(@color, 30%)
+      &:first-child
+        border-radius 10px 0 0 10px
+        borde-right 0
+
+      &:last-child
+        border-radius 0 10px 10px 0
+        border-left 0
+
     i
       color lighten(dark-blue, 50%)
       font-size 20px
